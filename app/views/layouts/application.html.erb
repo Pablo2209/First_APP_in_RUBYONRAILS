@@ -11,6 +11,16 @@
   </head>
 
   <body>
+
+    <!-- Navbar -->
+    <nav id="menu" class="navbar-inverse">
+      <h2>Menu</h2>
+      <ul>
+          <li> <%= link_to 'ONE', pages_one_path  %> </li>
+          <li> <%= link_to 'TWO', pages_two_path  %> </li>
+          <li> <%= link_to 'THREE', pages_three_path  %> </li>
+      </ul>
+      
     <%= yield %>
   </body>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
