@@ -7,19 +7,14 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    
+  
+
   </head>
 
   <body>
-
-    <!-- Navbar -->
-    <nav id="menu" class="navbar-inverse">
-      <h2>Menu</h2>
-      <ul>
-          <li> <%= link_to 'ONE', pages_one_path  %> </li>
-          <li> <%= link_to 'TWO', pages_two_path  %> </li>
-          <li> <%= link_to 'THREE', pages_three_path  %> </li>
-      </ul>
+      <!-- de aqui se llama el _navbar.html.erb -->
+      <%= render 'shared/navbar'%> 
+  
       
     <%= yield %>
   </body>
